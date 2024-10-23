@@ -1,0 +1,29 @@
+{
+  "name": "neosao_services_pvt_ltd",
+  "version": "1.0.0",
+  "description": "Task",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "dev:frontend": "npm run dev --prefix Frontend",
+    "dev:all": "concurrently \"npm run dev\" \"npm run dev:frontend\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.7.2",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.1"
+  }
+}
